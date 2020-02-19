@@ -7,7 +7,7 @@ header{
     text-align: center;
 }
 nav{
-    display: flex;
+    display: grid;
     justify-content: left;
     align-items: center;
     height: 10vh;
@@ -15,16 +15,16 @@ nav{
     font-family: sans-serif;
 }
 .navlinks{
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
     right: 0px;
-    height: 90vh;
-    top: -90vh;
-    background-color: lightpink;
+    height: 95vh;
+    top: -94.4vh;
+    background-color: black;
     align-items: center;
-    width: 20%;
+    width: 60%;
 }
 .navactive{
     transform: translateY(100vh)
@@ -33,7 +33,7 @@ nav{
     list-style: none;
 }
 .navlinks a{
-    color: black(223, 144, 70);
+    color: white;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -50,20 +50,38 @@ nav{
     margin-right: 50px;
 }
 .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(0deg) translate(5px, 4px);
 }
 .line2{
-    opacity: 0;
+    transform: rotate(0deg) translate(5px, 8px);
 }
 .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(0deg) translate(5px, -6px);
 }
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(45deg) translate(5px, 6px);
 }
 .toggle .line2{
     opacity: 0;
 }
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+.nextmatch{
+    background-color: white;
+}
+.lag1{
+    float: left;
+}
+.matchinfo1{
+    text-align: center
+}
+.matchinfo2{
+    text-align: center
+}
+.matchinfo3{
+    text-align: center
+}
+.lag2{
+    float: right
 }
