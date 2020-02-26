@@ -1,18 +1,71 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
-header{
-    text-align: center;
+.gridwrapper{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+            "he he he he he"
+            "na na na na na"
+            "a1 a2 a2 a2 a3"
+            "a4 a4 a4 a4 a4"
+            "a5 a5 a5 a5 a5"
+            "a6 a6 a6 a6 a6"
+            "a7 a7 a7 a7 a7"
+            "fo fo fo fo fo"
+            ;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-gap: 1px;
+
 }
-nav{
+
+.header{
     display: grid;
+    grid-area: "he";
+    background-color: dimgray
+}
+.nav{
+    grid-area: "na";
     justify-content: left;
     align-items: center;
     height: 10vh;
     background-color: blue;
     font-family: sans-serif;
+}
+.article1{
+    grid-area: "a1";
+    background-color: magenta;
+}
+.article2{
+    grid-area: "a2";
+    background-color: lime
+}
+.article3{
+    grid-area: "a3";
+    background-color: darkred
+}
+.article4{
+    grid-area: "a4";
+    background-color: salmon
+}
+.article5{
+    grid-area: "a5";
+    background-color: slateblue
+}
+.article6{
+    grid-area: "a6";
+    background-color: hotpink
+}.article7{
+    grid-area: "a7";
+    background-color: darkred
+}
+
+.footer{
+    grid-area: "fo";
+    background-color: gold
 }
 .navlinks{
     display: grid;
@@ -20,7 +73,7 @@ nav{
     justify-content: space-around;
     position: absolute;
     right: 0px;
-    height: 95vh;
+    height: 80vh;
     top: -94.4vh;
     background-color: black;
     align-items: center;
@@ -85,3 +138,7 @@ nav{
 .lag2{
     float: right
 }
+
+@media screen and (min-width: 992px) {
+    
+    }

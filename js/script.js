@@ -1,5 +1,8 @@
-function toggleMeny() {
-    document.querySelector(".navlinks").classList.toggle("navactive")
-    document.querySelector(".burger").classList.toggle("toggle")
+const nav = document.querySelector(".navlinks")
+const burger = document.querySelector(".burger")
+
+function togglemeny(){
+    nav.classList.toggle("navactive")
+    burger.classList.toggle("toggle")
 }
-    document.querySelector(".burger").addEventListener("click", toggleMeny)
+burger.addEventListener("click",togglemeny)
