@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin: 1px;
     padding: 0px;
 }
 .gridwrapper{
@@ -7,64 +7,60 @@
         width: 100vw;
         height: 100vh;
         grid-template-areas: 
-            "he he he he he"
-            "na na na na na"
-            "a1 a2 a2 a2 a3"
-            "a4 a4 a4 a4 a4"
-            "a5 a5 a5 a5 a5"
-            "a6 a6 a6 a6 a6"
-            "a7 a7 a7 a7 a7"
-            "fo fo fo fo fo"
+            "a1 a2 a3"
+            "a4 a4 a4"
+            "a5 a5 a5"
+            "a6 a6 a6"
+            "a7 a7 a7"
+            "fo fo fo"
             ;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(8, 1fr);
             grid-gap: 1px;
 
 }
 
 .header{
     display: grid;
-    grid-area: "he";
-    background-color: dimgray
+    background-color: dimgray;
+    text-align: center;
 }
 .nav{
-    grid-area: "na";
     justify-content: left;
     align-items: center;
     height: 10vh;
     background-color: blue;
     font-family: sans-serif;
+    text-align: center; 
 }
 .article1{
-    grid-area: "a1";
+    grid-area: a1;
     background-color: magenta;
 }
 .article2{
-    grid-area: "a2";
+    grid-area: a2;
     background-color: lime
 }
 .article3{
-    grid-area: "a3";
+    grid-area: a3;
     background-color: darkred
 }
 .article4{
-    grid-area: "a4";
+    grid-area: a4;
     background-color: salmon
 }
 .article5{
-    grid-area: "a5";
+    grid-area: a5;
     background-color: slateblue
 }
 .article6{
-    grid-area: "a6";
+    grid-area: a6;
     background-color: hotpink
 }.article7{
-    grid-area: "a7";
+    grid-area: a7;
     background-color: darkred
 }
 
 .footer{
-    grid-area: "fo";
+    grid-area: fo;
     background-color: gold
 }
 .navlinks{
@@ -126,17 +122,20 @@
 .lag1{
     float: left;
 }
-.matchinfo1{
+.matchinfo{
     text-align: center
 }
-.matchinfo2{
-    text-align: center
-}
-.matchinfo3{
-    text-align: center
+.merinfo{
+    text-align: center;
+    display: inline-block;
+    background-color: red;
+    padding: 15;
+    font-size: 30;
+    
 }
 .lag2{
-    float: right
+    display: block;
+    align-content: center
 }
 
 @media screen and (min-width: 992px) {

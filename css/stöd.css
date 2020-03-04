@@ -1,47 +1,8 @@
-.gridwraper{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-        grid-template-areas: 
-        "he he he"
-        "na na na"
-        "a1 a2 a3"
-        "a4 a4 a4"
-        "a5 a5 a5"
-        "a6 a6 a6"
-        "a7 a7 a7"
-        "fo fo fo"
-        ;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-gap: 1px;
-    }
-    .header {
-        grid-area: he;
-        background-color: orange;
-        position: relative;
-        text-align: center;
-        color: white;
-    }
-    .nav {
-        grid-area: na;
-        background-color: gray;
-        position: relative;
-        padding: 10px;
-    }
-    
-    .nav p {
-        display: inline;
-        margin: 20px
-    }
-    .article {
-        grid-area: a1;
-        background-color: grey;
-    }
-    .footer{
-        display: grid;
-        grid-area: fo;
-        background-color: grey;
-        padding: 10px;
-        grid-template-columns: repeat(5, 1fr)
-    }
+.article{
+    display: inline-block;
+    background-color: red
+}
+.matchinfo{
+    text-align: center;
+
+}
