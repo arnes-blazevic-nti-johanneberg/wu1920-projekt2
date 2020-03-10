@@ -45,11 +45,11 @@
 }
 .article4{
     grid-area: a4;
-    background-color: salmon
+    background-color: lightslategray
 }
 .article5{
     grid-area: a5;
-    background-color: slateblue
+    background-color: lightslategray
 }
 .article6{
     grid-area: a6;
@@ -136,6 +136,15 @@
 .lag2{
     display: block;
     align-content: center
+}
+.spelare{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 10px;
+    grid-gap: 10px;
+}
 }
 
 @media screen and (min-width: 992px) {
