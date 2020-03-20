@@ -144,7 +144,7 @@ a {
     right: 0px;
     height: 80vh;
     top: -94.4vh;
-    background-color: black;
+    background-color: lightskyblue;
     align-items: center;
     width: 60%;
 }
@@ -258,8 +258,15 @@ tr td:hover {
 
 
 
-
 @media screen and (min-width: 992px) {
-    
+    .navlinks{
+        display: none;
+    }
+    .burger{
+        display: none;
+    }
+    .navcomputer{
+        font-display: ;
+
     }
     
