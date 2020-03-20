@@ -106,8 +106,8 @@ a {
     background-color: lightslategrey;
     border-width: 1px 0px 0px 0px;
     position: relative;
-    
     border-bottom: 1px solid rgba(0,40,94,.1);
+
 }
 .article5{
     grid-area: a5;
@@ -123,6 +123,11 @@ a {
     grid-area: a7;
     background-color: lightslategray;
     position: relative;
+}
+.article4,.article5,.article6,.article7{
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
 
 .datum{
@@ -193,7 +198,7 @@ a {
     background-color: white;
 }
 .lag1{
-    float: left;
+    float: right;
 }
 .matchinfo{
     display: grid;
@@ -208,8 +213,7 @@ a {
     
 }
 .lag2{
-    display: block;
-    align-content: center
+    float: left;
 }
 .spelare{
     display: grid;
@@ -259,6 +263,9 @@ tr td:hover {
 .navcomputer{
     display: none;
 }
+a h2 {
+    text-align: center;
+}
 
 
 @media screen and (min-width: 992px) {
@@ -269,8 +276,21 @@ tr td:hover {
         display: none;
     }
     .navcomputer{
-        display: inline;
-
+        display: inline-flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
+    .navcomputer li {
+        padding: 14px 16px;
+        border: 2px solid white;
+        margin:10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+ .article1, .article3 {display:none}
 }
     
