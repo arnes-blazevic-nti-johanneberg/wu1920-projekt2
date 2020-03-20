@@ -256,6 +256,9 @@ tr td:hover {
     background: #666; color: #FFF; 
 }  
 
+.navcomputer{
+    display: none;
+}
 
 
 @media screen and (min-width: 992px) {
@@ -266,7 +269,8 @@ tr td:hover {
         display: none;
     }
     .navcomputer{
-        font-display: ;
+        display: inline;
 
     }
+}
     
