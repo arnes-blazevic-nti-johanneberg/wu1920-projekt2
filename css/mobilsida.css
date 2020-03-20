@@ -17,11 +17,6 @@
             grid-gap: 1px;
 
 }
-.omklubben{
-
-    
-}
-
 .spelarposition{
     margin-top: 20px;
 }
@@ -123,11 +118,6 @@ a {
     grid-area: a7;
     background-color: lightslategray;
     position: relative;
-}
-.article4,.article5,.article6,.article7{
-    margin-left: 10%;
-    margin-right: 10%;
-
 }
 
 .datum{
@@ -263,10 +253,9 @@ tr td:hover {
 .navcomputer{
     display: none;
 }
-a h2 {
+a h2,.matcher,.omklubbentext {
     text-align: center;
 }
-
 
 @media screen and (min-width: 992px) {
     .navlinks{
@@ -286,6 +275,10 @@ a h2 {
         padding: 14px 16px;
         border: 2px solid white;
         margin:10px;
+       }
+    .spelarinfo,.spelarposition,.spelareilaget,.article4,.article5,.article6,.article7,.matcher,.graph,.omklubben{
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
