@@ -82,21 +82,21 @@ a {
     margin-left: 10px;
 }
 
-.article1{
+.Hemmalag{
     grid-area: a1;
     background-color: white;
 }
-.article2{
+.Matchinfo1{
     grid-area: a2;
     background-color:   white;
 }
-.article3{
+.Bortalag{
     grid-area: a3;
     background-color: white;
     margin-left: 40px;
     margin-right: 20px;
 }
-.article4{
+.Eftermatch{
     grid-area: a4;
     background-color: lightslategrey;
     border-width: 1px 0px 0px 0px;
@@ -104,17 +104,17 @@ a {
     border-bottom: 1px solid rgba(0,40,94,.1);
 
 }
-.article5{
+.Införmatch{
     grid-area: a5;
     background-color: lightslategray;
     position: relative;
 }
-.article6{
+.Presenteradtrupp{
     grid-area: a6;
     background-color: lightslategray;
     position: relative;
 }
-.article7{
+.Nyaspelare{
     grid-area: a7;
     background-color: lightslategray;
     position: relative;
@@ -187,7 +187,7 @@ a {
 .nextmatch{
     background-color: white;
 }
-.lag1{
+.NolIK{
     float: right;
 }
 .matchinfo{
@@ -202,7 +202,7 @@ a {
     
     
 }
-.lag2{
+.Gais{
     float: left;
 }
 .spelare{
@@ -276,14 +276,10 @@ a h2,.matcher,.omklubbentext {
         border: 2px solid white;
         margin:10px;
        }
-    .spelarinfo,.spelarposition,.spelareilaget,.article4,.article5,.article6,.article7,.matcher,.graph,.omklubben{
+    .spelarinfo,.spelarposition,.spelareilaget,.Eftermatch,.Införmatch,.Presenteradtrupp,.Nyaspelare,.matcher,.graph,.omklubben{
         margin-left: 10%;
         margin-right: 10%;
     }
 }
 
-@media screen and (max-width: 400px) {
-
- .article1, .article3 {display:none}
-}
     
