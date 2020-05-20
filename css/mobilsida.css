@@ -17,8 +17,19 @@
             grid-gap: 1px;
 
 }
+.newstitle {
+    color: #234b9a;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #234b9a;
+  }
 .spelarposition{
     margin-top: 20px;
+    text-align: left;
 }
 .spelareilaget{
     margin-top: 20px;
@@ -27,10 +38,13 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
+    align-items: center;
     margin: 10px;
     grid-gap: 10px;
     overflow: auto;
+    margin-left: 10%;
 }
+
 .mellanrum{
     margin-top: 30px;
 
@@ -58,7 +72,7 @@
 .nav{
     justify-content: left;
     align-items: center;
-    height: 10vh;
+    min-height: 10vh;
     background-color: lightskyblue;
     font-family: sans-serif;
     text-align: center;
@@ -69,8 +83,8 @@ hr{
 
 }
 a {
-    color: black;
     text-decoration: none;
+    color: black;
   }
 .container{
     text-align: center;
@@ -88,7 +102,9 @@ a {
 }
 .Matchinfo1{
     grid-area: a2;
-    background-color:   white;
+    background-color: white;
+    width: 100px;
+    align-items: center;
 }
 .Bortalag{
     grid-area: a3;
@@ -98,37 +114,73 @@ a {
 }
 .Eftermatch{
     grid-area: a4;
-    background-color: lightslategrey;
-    border-width: 1px 0px 0px 0px;
-    position: relative;
-    border-bottom: 1px solid rgba(0,40,94,.1);
+    display: block;
+    font-weight: 400;
+    margin: 10 auto;
+    background-color: #eee;
+    margin-top: 25px;
+    text-align: center;
 
 }
 .Införmatch{
     grid-area: a5;
-    background-color: lightslategray;
-    position: relative;
+    display: block;
+    font-weight: 400;
+    margin: 10 auto;
+    background-color: #eee;
+    margin-top: 25px;
+    text-align: center;
+    color: black;
 }
 .Presenteradtrupp{
     grid-area: a6;
-    background-color: lightslategray;
-    position: relative;
+    display: block;
+    margin: 10 auto;
+    background-color: #eee;
+    margin-top: 25px;
+    text-align: center;
 }
 .Nyaspelare{
     grid-area: a7;
-    background-color: lightslategray;
-    position: relative;
+    display: block;
+    font-weight: 100;
+    margin: 10 auto;
+    background-color: #eee;
+    margin-top: 25px;
+    text-align: center;
+}
+button{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:1em;
+    box-sizing: border-box;
+
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    background-color: #1b1e24;
+    color: white;
+    margin-bottom: 4px;
+}
+.button2{
+    color: white;
+
 }
 
 .datum{
     text-align: end;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
 .footer{
     grid-area: fo;
-    background-color: lightskyblue
+    background-color: lightskyblue;
+    margin: 100;
+    min-height: 10;
 }
 .navlinks{
     display: grid;
@@ -256,6 +308,35 @@ tr td:hover {
 a h2,.matcher,.omklubbentext {
     text-align: center;
 }
+li{
+    list-style-type: none;
+}
+
+h2{
+    color: black;
+}
+.tjanstlayout{
+    padding-top: 10vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    text-align: center;
+    margin: auto;
+    max-width: 55vw;
+}
+.rubriker{
+    display: block;
+  font-size: 2.0em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: normal;
+  text-decoration: underline #ff6500;
+  padding-bottom: 10px;
+  padding-top: 30Px;
+}
 
 @media screen and (min-width: 992px) {
     .navlinks{
@@ -276,9 +357,13 @@ a h2,.matcher,.omklubbentext {
         border: 2px solid white;
         margin:10px;
        }
-    .spelarinfo,.spelarposition,.spelareilaget,.Eftermatch,.Införmatch,.Presenteradtrupp,.Nyaspelare,.matcher,.graph,.omklubben{
+    .spelarinfo,.spelarposition,.Eftermatch,.Införmatch,.Presenteradtrupp,.Nyaspelare,.matcher,.graph,.omklubben{
         margin-left: 10%;
         margin-right: 10%;
+    }
+    .Matchinfo1{
+        width: 150px;
+
     }
 }
 
